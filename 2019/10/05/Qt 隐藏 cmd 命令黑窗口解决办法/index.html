@@ -128,10 +128,10 @@
 <li><font color="green">QProcess : 以进程的方式调用 cmd 命令, 这种方式基本上没有办法隐藏.</font></li>
 </ul>
 <ul>
-<li>system : 以 C++ 系统函数的方式调用 cmd 命令,这种方式与 QProcess 方式一样，也没有办法隐藏黑窗口.</li>
+<li><font color="green">system : 以 C++ 系统函数的方式调用 cmd 命令,这种方式与 QProcess 方式一样，也没有办法隐藏黑窗口.</font></li>
 </ul>
 <ul>
-<li><p>WinExec : 这种方式可以选择显示/隐藏 cmd 命令窗口的弹出.</p>
+<li><p><font color="green">WinExec : 这种方式可以选择显示/隐藏 cmd 命令窗口的弹出.</font></p>
 <blockquote>
 <p>WinExec 方式的使用需要添加 #include &lt;windows.h&gt; 头文件</p>
 <p>用法如下：<br>char *command  = “net use \\192.168.1.1\E\share_directory &quot;username&quot; /user:&quot;password&quot;“;<br>WinExec( command, SW_HIDE );</p>
