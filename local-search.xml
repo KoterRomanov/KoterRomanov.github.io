@@ -17,11 +17,11 @@
   
   
   <entry>
-    <title>Qt 隐藏 cmd 命令黑窗口解决办法</title>
+    <title></title>
     <link href="undefined2019/10/05/Qt%20%E9%9A%90%E8%97%8F%20cmd%20%E5%91%BD%E4%BB%A4%E9%BB%91%E7%AA%97%E5%8F%A3%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
     <url>2019/10/05/Qt%20%E9%9A%90%E8%97%8F%20cmd%20%E5%91%BD%E4%BB%A4%E9%BB%91%E7%AA%97%E5%8F%A3%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
     
-    <content type="html"><![CDATA[<pre><code>在 Windows 系统编写的 Qt 程序有时会调用 cmd 命令, 调用 cmd 命令就会弹出黑窗口, 下面将讲解隐藏弹出的黑窗口.</code></pre><h3 id="Qt-调用-cmd-命令的方式"><a href="#Qt-调用-cmd-命令的方式" class="headerlink" title="Qt 调用 cmd 命令的方式"></a><font color="blue">Qt 调用 cmd 命令的方式</font></h3><ul><li>QProcess : 以进程的方式调用 cmd 命令, 这种方式基本上没有办法隐藏.</li></ul><ul><li>system : 以 C++ 系统函数的方式调用 cmd 命令,这种方式与 QProcess 方式一样，也没有办法隐藏黑窗口.</li></ul><ul><li>WinExec : 这种方式可以选择显示/隐藏 cmd 命令窗口的弹出.<blockquote><p>WinExec 方式的使用需要添加 #include &lt;windows.h&gt; 头文件</p><p>用法如下：<br>char *command  = “net use \\192.168.1.1\E\share_directory &quot;username&quot; /user:&quot;password&quot;“;<br>WinExec( command, SW_HIDE );</p></blockquote></li></ul>]]></content>
+    <content type="html"><![CDATA[<hr><h1 id="Qt-隐藏-cmd-命令黑窗口解决办法"><a href="#Qt-隐藏-cmd-命令黑窗口解决办法" class="headerlink" title="Qt 隐藏 cmd 命令黑窗口解决办法"></a><font color="green">Qt 隐藏 cmd 命令黑窗口解决办法</font></h1><hr><p>在 Windows 系统编写的 Qt 程序有时会调用 cmd 命令, 调用 cmd 命令就会弹出黑窗口, 下面将讲解隐藏弹出的黑窗口.</p><h3 id="Qt-调用-cmd-命令的方式"><a href="#Qt-调用-cmd-命令的方式" class="headerlink" title="Qt 调用 cmd 命令的方式"></a><font color="blue">Qt 调用 cmd 命令的方式</font></h3><ul><li>QProcess : 以进程的方式调用 cmd 命令, 这种方式基本上没有办法隐藏.</li></ul><ul><li>system : 以 C++ 系统函数的方式调用 cmd 命令,这种方式与 QProcess 方式一样，也没有办法隐藏黑窗口.</li></ul><ul><li><p>WinExec : 这种方式可以选择显示/隐藏 cmd 命令窗口的弹出.</p><blockquote><p>WinExec 方式的使用需要添加 #include &lt;windows.h&gt; 头文件</p><p>用法如下：<br>char *command  = “net use \\192.168.1.1\E\share_directory &quot;username&quot; /user:&quot;password&quot;“;<br>WinExec( command, SW_HIDE );</p></blockquote></li></ul>]]></content>
     
     
     
