@@ -14,7 +14,7 @@
   <meta name="description" content="KoterRomanov 的个人博客">
   <meta name="author" content="KoterRomanov">
   <meta name="keywords" content>
-  <title>Archive ~ 君莫笑</title>
+  <title>君莫笑</title>
   <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css">
@@ -30,7 +30,7 @@
 
 
 <body>
-  <header style="height: 80vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -90,7 +90,7 @@
 </nav>
 
     <div class="view intro-2"
-         style="background: url('/img/Archive.png')no-repeat center center;
+         style="background: url('/img/Post.png')no-repeat center center;
            background-size: cover;
            background-attachment: scroll;">
       <div class="full-bg-img">
@@ -100,6 +100,9 @@
               
             </span>
 
+            
+              <br>
+              <p>Thursday, October 10th 2019, 1:59 pm</p>
             
           </div>
 
@@ -111,59 +114,72 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">5 posts in total.</p>
-  <hr>
-  
-    
       
-      <p class="h5">2019</p>
-    
-    <a href="/2019/10/10/analogclock/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title"></span>
-      <span style="float: right;">10-10</span>
-    </a>
-  
-    
-    <a href="/2019/10/07/SFML Game List/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">SFML Game List</span>
-      <span style="float: right;">10-07</span>
-    </a>
-  
-    
-    <a href="/2019/10/05/Hexo/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Hexo 学习</span>
-      <span style="float: right;">10-05</span>
-    </a>
-  
-    
-    <a href="/2019/10/05/Qt 隐藏 cmd 命令黑窗口解决办法/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Qt 隐藏 cmd 命令黑窗口解决办法</span>
-      <span style="float: right;">10-05</span>
-    </a>
-  
-    
-    <a href="/2019/10/05/hello-world/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Hello World</span>
-      <span style="float: right;">10-05</span>
-    </a>
-  
-</div>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto">
+          <div class="markdown-body">
+            <h2 id="AnalogClock"><a href="#AnalogClock" class="headerlink" title="AnalogClock"></a>AnalogClock</h2><p>Qt Example 的这个例子主要是介绍 QPainter 的基本用法</p>
+<ul>
+<li><p>translate( qreal dx, qreal dy ) 平移坐标系. 坐标系原点 x 轴平移 dx 单位, 坐标系 y 轴平移 dy 单位.</p>
+</li>
+<li><p>scale( qreal sx, qreal sy ) 缩放坐标系. 坐标系 x 轴缩放 sx 单位, 坐标系 y 轴缩放 sy 单位.</p>
+</li>
+<li><p>rotate( qreal angle ) 旋转坐标系. angle 大于 0 时, 坐标系顺时针旋转 angle 角度; angle 小于 0 时, 坐标系逆时针旋转 angle 角度. </p>
+</li>
+<li><p>setRenderHint( QPainter::RenderHint hint, bool on = true ) 设置绘制引擎, 不同的绘制引擎可以绘制不同的效果. 例如：QPainter::Antialiasing 反锯齿.</p>
+</li>
+<li><p>setPen( QPen pen ) 设置绘制图形的画笔</p>
+</li>
+<li><p>setBrush( QBrush brush ) 设置绘制图形的画刷</p>
+</li>
+<li><p>drawLine ( QPoint start, QPoint stop ) 绘制直线</p>
+</li>
+<li><p>未完待续</p>
+</li>
+</ul>
 
-              </div>
-            </div>
+            <hr>
+          </div>
+          <br>
+          <div>
+            
+            <p>
+              <i class="iconfont icon-tag"></i>
+              
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
           </div>
         </div>
       </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;TOC</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+  </div>
+</div>
+
     
   </main>
 
@@ -217,6 +233,11 @@
   <script src="/js/lazyload.js" ></script>
 
 
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
 
   <script src="/lib/prettify/prettify.min.js" ></script>
   <script>
@@ -232,7 +253,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "Archive&nbsp;",
+        "&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 40,
