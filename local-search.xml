@@ -4,11 +4,11 @@
   
   
   <entry>
-    <title></title>
+    <title>AnalogClock</title>
     <link href="undefined2019/10/10/analogclock/"/>
     <url>2019/10/10/analogclock/</url>
     
-    <content type="html"><![CDATA[<h2 id="AnalogClock"><a href="#AnalogClock" class="headerlink" title="AnalogClock"></a>AnalogClock</h2><p>Qt Example 的这个例子主要是介绍 QPainter 的基本用法</p><ul><li><p>translate( qreal dx, qreal dy ) 平移坐标系. 坐标系原点 x 轴平移 dx 单位, 坐标系 y 轴平移 dy 单位.</p></li><li><p>scale( qreal sx, qreal sy ) 缩放坐标系. 坐标系 x 轴缩放 sx 单位, 坐标系 y 轴缩放 sy 单位.</p></li><li><p>rotate( qreal angle ) 旋转坐标系. angle 大于 0 时, 坐标系顺时针旋转 angle 角度; angle 小于 0 时, 坐标系逆时针旋转 angle 角度. </p></li><li><p>setRenderHint( QPainter::RenderHint hint, bool on = true ) 设置绘制引擎, 不同的绘制引擎可以绘制不同的效果. 例如：QPainter::Antialiasing 反锯齿.</p></li><li><p>setPen( QPen pen ) 设置绘制图形的画笔</p></li><li><p>setBrush( QBrush brush ) 设置绘制图形的画刷</p></li><li><p>drawLine ( QPoint start, QPoint stop ) 绘制直线</p></li><li><p>未完待续</p></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>Qt Example 的这个例子主要是介绍 QPainter 的基本用法</p><ul><li><p>translate( qreal dx, qreal dy ) 平移坐标系. 坐标系原点 x 轴平移 dx 单位, 坐标系 y 轴平移 dy 单位.</p></li><li><p>scale( qreal sx, qreal sy ) 缩放坐标系. 坐标系 x 轴缩放 sx 单位, 坐标系 y 轴缩放 sy 单位.</p></li><li><p>rotate( qreal angle ) 旋转坐标系. angle 大于 0 时, 坐标系顺时针旋转 angle 角度; angle 小于 0 时, 坐标系逆时针旋转 angle 角度. </p></li><li><p>setRenderHint( QPainter::RenderHint hint, bool on = true ) 设置绘制引擎, 不同的绘制引擎可以绘制不同的效果. 例如：QPainter::Antialiasing 反锯齿.</p></li><li><p>setPen( QPen pen ) 设置绘制图形的画笔</p></li><li><p>setBrush( QBrush brush ) 设置绘制图形的画刷</p></li><li><p>drawLine ( QPoint start, QPoint stop ) 绘制直线</p></li><li><p>未完待续</p></li></ul>]]></content>
     
     
     
