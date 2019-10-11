@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>QSizePolicy 类</title>
+    <link href="undefined2019/10/11/QSizePolicy/"/>
+    <url>2019/10/11/QSizePolicy/</url>
+    
+    <content type="html"><![CDATA[<p>QSizePolicy 类是描述布局水平和垂直方向上大小调整策略的属性</p><p>窗口部件的大小策略提供了很多的大小调整方式,并提供给布局引擎.每一个窗口部件返回一个 QSizePolicy 来描述在布局水平和垂直方向调整大小的策略. 可以通过指定窗口部件的 sizePolicy 属性来改变它在布局中的大小调整策略.</p><p>大小策略包含水平大小策略、垂直大小策略、水平大小缩放因子、垂直大小缩放因子、高度和宽度是否相关的标识.</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>AnalogClock</title>
     <link href="undefined2019/10/10/analogclock/"/>
     <url>2019/10/10/analogclock/</url>

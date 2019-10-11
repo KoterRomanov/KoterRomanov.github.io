@@ -14,7 +14,7 @@
   <meta name="description" content="KoterRomanov 的个人博客">
   <meta name="author" content="KoterRomanov">
   <meta name="keywords" content>
-  <title>Archive ~ 君莫笑</title>
+  <title>QSizePolicy 类 ~ 君莫笑</title>
   <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css">
@@ -30,7 +30,7 @@
 
 
 <body>
-  <header style="height: 80vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -90,7 +90,7 @@
 </nav>
 
     <div class="view intro-2"
-         style="background: url('/img/Archive.png')no-repeat center center;
+         style="background: url('/img/Post.png')no-repeat center center;
            background-size: cover;
            background-attachment: scroll;">
       <div class="full-bg-img">
@@ -100,6 +100,9 @@
               
             </span>
 
+            
+              <br>
+              <p>Friday, October 11th 2019, 12:00 am</p>
             
           </div>
 
@@ -111,65 +114,56 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">6 posts in total.</p>
-  <hr>
-  
-    
       
-      <p class="h5">2019</p>
-    
-    <a href="/2019/10/11/QSizePolicy/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">QSizePolicy 类</span>
-      <span style="float: right;">10-11</span>
-    </a>
-  
-    
-    <a href="/2019/10/10/analogclock/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">AnalogClock</span>
-      <span style="float: right;">10-10</span>
-    </a>
-  
-    
-    <a href="/2019/10/07/SFML Game List/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">SFML Game List</span>
-      <span style="float: right;">10-07</span>
-    </a>
-  
-    
-    <a href="/2019/10/05/Hexo/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Hexo 学习</span>
-      <span style="float: right;">10-05</span>
-    </a>
-  
-    
-    <a href="/2019/10/05/Qt 隐藏 cmd 命令黑窗口解决办法/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Qt 隐藏 cmd 命令黑窗口解决办法</span>
-      <span style="float: right;">10-05</span>
-    </a>
-  
-    
-    <a href="/2019/10/05/hello-world/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Hello World</span>
-      <span style="float: right;">10-05</span>
-    </a>
-  
-</div>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto">
+          <div class="markdown-body">
+            <p>QSizePolicy 类是描述布局水平和垂直方向上大小调整策略的属性</p>
+<p>窗口部件的大小策略提供了很多的大小调整方式,并提供给布局引擎.每一个窗口部件返回一个 QSizePolicy 来描述在布局水平和垂直方向调整大小的策略. 可以通过指定窗口部件的 sizePolicy 属性来改变它在布局中的大小调整策略.</p>
+<p>大小策略包含水平大小策略、垂直大小策略、水平大小缩放因子、垂直大小缩放因子、高度和宽度是否相关的标识.</p>
 
-              </div>
-            </div>
+            <hr>
+          </div>
+          <br>
+          <div>
+            
+            <p>
+              <i class="iconfont icon-tag"></i>
+              
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
           </div>
         </div>
       </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;TOC</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+  </div>
+</div>
+
     
   </main>
 
@@ -223,6 +217,11 @@
   <script src="/js/lazyload.js" ></script>
 
 
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
 
   <script src="/lib/prettify/prettify.min.js" ></script>
   <script>
@@ -238,7 +237,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "Archive&nbsp;",
+        "QSizePolicy 类&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 40,
